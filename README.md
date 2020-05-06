@@ -10,13 +10,13 @@
 
  ---
 
- ### Description 
+### Description 
  ![RESTFULL APIS with Docker Base](https://miro.medium.com/max/1400/1*FcigeCUocGksT_eaQ4JH9w.png)
 
  Simple Scikit-Learn model deployed as a REST API using Flask RESTful.
  Sentiment prediction : [Naives Bayes classifier](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
 
- ### Environment Requirement
+### Environment Requirement
 
  This Modul depends on : 
 
@@ -50,12 +50,14 @@ docker-compose up -d --build
 
 ```sh
  curl http://127.0.0.1:5000/
+ or
+  curl http://localhost:5000/
 ```
 
 4. run Sentiment Pridector API command
 
 ```sh
-curl -X GET http://127.0.0.1:5000/query -d query='$query'
+curl -X GET http://127.0.0.1:5000/statment -d query='$query'
 
 {"prediction": "Positive/Negative", "confidence": int}
 ```

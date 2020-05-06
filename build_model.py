@@ -1,11 +1,13 @@
 from model import NLPModel
 import pandas as pd
+from util import plot_roc
 # import numpy as np
 # import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 
 def build_model():
+    
     model = NLPModel()
 
     # filename = os.path.join(
@@ -33,7 +35,7 @@ def build_model():
     model.pickle_clf()
     model.pickle_vectorizer()
 
-    # model.plot_roc(X_test, y_test)
+    return model.plot_roc(X_test, y_test,8,8)
 
 
 if __name__ == "__main__":

@@ -36,7 +36,7 @@ class NLPModel(object):
     def train(self, X, y):
         """Trains the classifier to associate the label with the sparse matrix
         """
-        # X_train, X_test, y_train, y_test = train_test_split(X, y)
+        #X_train, X_test, y_train, y_test = train_test_split(X, y)
         self.clf.fit(X, y)
 
     def predict_proba(self, X):
