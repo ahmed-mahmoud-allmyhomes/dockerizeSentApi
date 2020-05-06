@@ -57,7 +57,7 @@ docker-compose up -d --build
 4. run Sentiment Pridector API command
 
 ```sh
-curl -X GET http://127.0.0.1:5000/query -d query='$query'
+curl -X GET http://127.0.0.1:5000/statment -d query='$query'
 
 {"prediction": "Positive/Negative", "confidence": int}
 ```
